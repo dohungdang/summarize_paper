@@ -1,0 +1,55 @@
+cấu trúc folder dự án
+
+AI-model/
+│
+├── README.md
+│
+├── data/
+│   ├── raw/
+│   │   └── data.csv
+│   │
+│   └── processed/
+│       ├── train.csv
+│       ├── val.csv
+│       └── test.csv
+│
+├── algorithms/
+│   ├── textrank.ipynb
+│   ├── kl_sum.ipynb
+│   └── lsa.ipynb
+│
+└── bartpho_finetune_project/
+    │
+    ├── bartpho_env/                # Môi trường ảo (co duong dan toi drive)
+    │
+    ├── configs/
+    │   └── training_config.yaml
+    │
+    ├── data/
+    │   ├── data.csv
+    │   ├── evaluate/
+    │   └── processed/
+    │
+    ├── outputs/
+    │   └── bartpho-fintuned/       # Checkpoint model fine-tuned (co duong dan toi drive)
+    │
+    ├── scripts/
+    │   ├── evaluate_model.py
+    │   ├── infer.py
+    │   ├── prepare_data.py
+    │   ├── train.py
+    │   └── app.py
+    │
+    ├── requirements.txt
+    └── run_project.txt
+
+
+# Open cmd -> cd '/thu muc project/'
+
+python -m venv bartpho_env
+bartpho_env\Scripts\activate
+pip install -r requirements.txt
+python scripts/prepapre_data.py
+python scripts/train.py vinai/bartpho-word data/processed outputs/bartpho-finetuned
+python scripts/evaluate_model.py
+python scripts/infer.py outputs/bartpho-finetuned "TEXT"
