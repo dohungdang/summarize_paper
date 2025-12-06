@@ -8,6 +8,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const loginLink = document.querySelector('nav a[href="login"]');
     const miniLogin = document.getElementById('miniLogin');
     const closeMini = document.getElementById('closeMini');
+    const historyList = document.getElementById('historyList');
+    const clearHistoryBtn = document.getElementById('clearHistoryBtn');
+
 
     loginLink.addEventListener('click', (e) => {
         e.preventDefault();
@@ -98,5 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
         
         return words.slice(0, numWordsToKeep).join(' ') + '... (Văn bản tóm tắt mô phỏng)';
     }
+
 
 );
