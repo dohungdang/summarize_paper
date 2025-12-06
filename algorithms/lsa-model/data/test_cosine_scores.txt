@@ -1,0 +1,538 @@
+===== Cosine Similarity Scores (per document) =====
+
+Document 1:
+Cosine similarity: 0.307
+========================
+Document 2:
+Cosine similarity: 0.45
+========================
+Document 3:
+Cosine similarity: 0.613
+========================
+Document 4:
+Cosine similarity: 0.434
+========================
+Document 5:
+Cosine similarity: 0.515
+========================
+Document 6:
+Cosine similarity: 0.576
+========================
+Document 7:
+Cosine similarity: 0.613
+========================
+Document 8:
+Cosine similarity: 0.492
+========================
+Document 9:
+Cosine similarity: 0.368
+========================
+Document 10:
+Cosine similarity: 0.457
+========================
+Document 11:
+Cosine similarity: 0.338
+========================
+Document 12:
+Cosine similarity: 0.58
+========================
+Document 13:
+Cosine similarity: 0.413
+========================
+Document 14:
+Cosine similarity: 0.289
+========================
+Document 15:
+Cosine similarity: 0.621
+========================
+Document 16:
+Cosine similarity: 0.568
+========================
+Document 17:
+Cosine similarity: 0.472
+========================
+Document 18:
+Cosine similarity: 0.456
+========================
+Document 19:
+Cosine similarity: 0.623
+========================
+Document 20:
+Cosine similarity: 0.484
+========================
+Document 21:
+Cosine similarity: 0.514
+========================
+Document 22:
+Cosine similarity: 0.536
+========================
+Document 23:
+Cosine similarity: 0.41
+========================
+Document 24:
+Cosine similarity: 0.432
+========================
+Document 25:
+Cosine similarity: 0.498
+========================
+Document 26:
+Cosine similarity: 0.371
+========================
+Document 27:
+Cosine similarity: 0.411
+========================
+Document 28:
+Cosine similarity: 0.73
+========================
+Document 29:
+Cosine similarity: 0.369
+========================
+Document 30:
+Cosine similarity: 0.233
+========================
+Document 31:
+Cosine similarity: 0.477
+========================
+Document 32:
+Cosine similarity: 0.502
+========================
+Document 33:
+Cosine similarity: 0.696
+========================
+Document 34:
+Cosine similarity: 0.473
+========================
+Document 35:
+Cosine similarity: 0.319
+========================
+Document 36:
+Cosine similarity: 0.516
+========================
+Document 37:
+Cosine similarity: 0.436
+========================
+Document 38:
+Cosine similarity: 0.096
+========================
+Document 39:
+Cosine similarity: 0.653
+========================
+Document 40:
+Cosine similarity: 0.455
+========================
+Document 41:
+Cosine similarity: 0.457
+========================
+Document 42:
+Cosine similarity: 0.408
+========================
+Document 43:
+Cosine similarity: 0.348
+========================
+Document 44:
+Cosine similarity: 0.605
+========================
+Document 45:
+Cosine similarity: 0.407
+========================
+Document 46:
+Cosine similarity: 0.27
+========================
+Document 47:
+Cosine similarity: 0.346
+========================
+Document 48:
+Cosine similarity: 0.767
+========================
+Document 49:
+Cosine similarity: 0.599
+========================
+Document 50:
+Cosine similarity: 0.372
+========================
+Document 51:
+Cosine similarity: 0.32
+========================
+Document 52:
+Cosine similarity: 0.404
+========================
+Document 53:
+Cosine similarity: 0.508
+========================
+Document 54:
+Cosine similarity: 0.46
+========================
+Document 55:
+Cosine similarity: 0.427
+========================
+Document 56:
+Cosine similarity: 0.307
+========================
+Document 57:
+Cosine similarity: 0.51
+========================
+Document 58:
+Cosine similarity: 0.427
+========================
+Document 59:
+Cosine similarity: 0.363
+========================
+Document 60:
+Cosine similarity: 0.446
+========================
+Document 61:
+Cosine similarity: 0.447
+========================
+Document 62:
+Cosine similarity: 0.49
+========================
+Document 63:
+Cosine similarity: 0.388
+========================
+Document 64:
+Cosine similarity: 0.504
+========================
+Document 65:
+Cosine similarity: 0.579
+========================
+Document 66:
+Cosine similarity: 0.492
+========================
+Document 67:
+Cosine similarity: 0.788
+========================
+Document 68:
+Cosine similarity: 0.43
+========================
+Document 69:
+Cosine similarity: 0.403
+========================
+Document 70:
+Cosine similarity: 0.393
+========================
+Document 71:
+Cosine similarity: 0.753
+========================
+Document 72:
+Cosine similarity: 0.439
+========================
+Document 73:
+Cosine similarity: 0.47
+========================
+Document 74:
+Cosine similarity: 0.558
+========================
+Document 75:
+Cosine similarity: 0.553
+========================
+Document 76:
+Cosine similarity: 0.57
+========================
+Document 77:
+Cosine similarity: 0.482
+========================
+Document 78:
+Cosine similarity: 0.672
+========================
+Document 79:
+Cosine similarity: 0.473
+========================
+Document 80:
+Cosine similarity: 0.479
+========================
+Document 81:
+Cosine similarity: 0.515
+========================
+Document 82:
+Cosine similarity: 0.532
+========================
+Document 83:
+Cosine similarity: 0.447
+========================
+Document 84:
+Cosine similarity: 0.493
+========================
+Document 85:
+Cosine similarity: 0.446
+========================
+Document 86:
+Cosine similarity: 0.443
+========================
+Document 87:
+Cosine similarity: 0.594
+========================
+Document 88:
+Cosine similarity: 0.23
+========================
+Document 89:
+Cosine similarity: 0.459
+========================
+Document 90:
+Cosine similarity: 0.509
+========================
+Document 91:
+Cosine similarity: 0.433
+========================
+Document 92:
+Cosine similarity: 0.419
+========================
+Document 93:
+Cosine similarity: 0.568
+========================
+Document 94:
+Cosine similarity: 0.516
+========================
+Document 95:
+Cosine similarity: 0.637
+========================
+Document 96:
+Cosine similarity: 0.449
+========================
+Document 97:
+Cosine similarity: 0.524
+========================
+Document 98:
+Cosine similarity: 0.641
+========================
+Document 99:
+Cosine similarity: 0.501
+========================
+Document 100:
+Cosine similarity: 0.346
+========================
+Document 101:
+Cosine similarity: 0.37
+========================
+Document 102:
+Cosine similarity: 0.805
+========================
+Document 103:
+Cosine similarity: 0.35
+========================
+Document 104:
+Cosine similarity: 0.376
+========================
+Document 105:
+Cosine similarity: 0.482
+========================
+Document 106:
+Cosine similarity: 0.38
+========================
+Document 107:
+Cosine similarity: 0.59
+========================
+Document 108:
+Cosine similarity: 0.731
+========================
+Document 109:
+Cosine similarity: 0.389
+========================
+Document 110:
+Cosine similarity: 0.373
+========================
+Document 111:
+Cosine similarity: 0.545
+========================
+Document 112:
+Cosine similarity: 0.383
+========================
+Document 113:
+Cosine similarity: 0.306
+========================
+Document 114:
+Cosine similarity: 0.431
+========================
+Document 115:
+Cosine similarity: 0.365
+========================
+Document 116:
+Cosine similarity: 0.697
+========================
+Document 117:
+Cosine similarity: 0.653
+========================
+Document 118:
+Cosine similarity: 0.444
+========================
+Document 119:
+Cosine similarity: 0.514
+========================
+Document 120:
+Cosine similarity: 0.494
+========================
+Document 121:
+Cosine similarity: 0.424
+========================
+Document 122:
+Cosine similarity: 0.473
+========================
+Document 123:
+Cosine similarity: 0.504
+========================
+Document 124:
+Cosine similarity: 0.57
+========================
+Document 125:
+Cosine similarity: 0.427
+========================
+Document 126:
+Cosine similarity: 0.703
+========================
+Document 127:
+Cosine similarity: 0.685
+========================
+Document 128:
+Cosine similarity: 0.432
+========================
+Document 129:
+Cosine similarity: 0.61
+========================
+Document 130:
+Cosine similarity: 0.355
+========================
+Document 131:
+Cosine similarity: 0.382
+========================
+Document 132:
+Cosine similarity: 0.483
+========================
+Document 133:
+Cosine similarity: 0.572
+========================
+Document 134:
+Cosine similarity: 0.555
+========================
+Document 135:
+Cosine similarity: 0.431
+========================
+Document 136:
+Cosine similarity: 0.588
+========================
+Document 137:
+Cosine similarity: 0.634
+========================
+Document 138:
+Cosine similarity: 0.25
+========================
+Document 139:
+Cosine similarity: 0.301
+========================
+Document 140:
+Cosine similarity: 0.602
+========================
+Document 141:
+Cosine similarity: 0.482
+========================
+Document 142:
+Cosine similarity: 0.438
+========================
+Document 143:
+Cosine similarity: 0.382
+========================
+Document 144:
+Cosine similarity: 0.477
+========================
+Document 145:
+Cosine similarity: 0.53
+========================
+Document 146:
+Cosine similarity: 0.569
+========================
+Document 147:
+Cosine similarity: 0.577
+========================
+Document 148:
+Cosine similarity: 0.449
+========================
+Document 149:
+Cosine similarity: 0.468
+========================
+Document 150:
+Cosine similarity: 0.381
+========================
+Document 151:
+Cosine similarity: 0.626
+========================
+Document 152:
+Cosine similarity: 0.409
+========================
+Document 153:
+Cosine similarity: 0.341
+========================
+Document 154:
+Cosine similarity: 0.501
+========================
+Document 155:
+Cosine similarity: 0.692
+========================
+Document 156:
+Cosine similarity: 0.281
+========================
+Document 157:
+Cosine similarity: 0.58
+========================
+Document 158:
+Cosine similarity: 0.42
+========================
+Document 159:
+Cosine similarity: 0.549
+========================
+Document 160:
+Cosine similarity: 0.375
+========================
+Document 161:
+Cosine similarity: 0.677
+========================
+Document 162:
+Cosine similarity: 0.294
+========================
+Document 163:
+Cosine similarity: 0.357
+========================
+Document 164:
+Cosine similarity: 0.486
+========================
+Document 165:
+Cosine similarity: 0.436
+========================
+Document 166:
+Cosine similarity: 0.435
+========================
+Document 167:
+Cosine similarity: 0.592
+========================
+Document 168:
+Cosine similarity: 0.393
+========================
+Document 169:
+Cosine similarity: 0.513
+========================
+Document 170:
+Cosine similarity: 0.752
+========================
+Document 171:
+Cosine similarity: 0.514
+========================
+Document 172:
+Cosine similarity: 0.546
+========================
+Document 173:
+Cosine similarity: 0.524
+========================
+Document 174:
+Cosine similarity: 0.633
+========================
+Document 175:
+Cosine similarity: 0.561
+========================
+Document 176:
+Cosine similarity: 0.545
+========================
+Document 177:
+Cosine similarity: 0.459
+========================
+Document 178:
+Cosine similarity: 0.382
+========================
+
+Average Cosine similarity: 0.483
