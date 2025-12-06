@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextSummarizer - Tóm tắt văn bản </title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>TextSummarizer </h1>
+            <nav>
+                <a href="https://quillbot.com/summarize">Trang chủ</a>
+                <a href="#">Giới thiệu</a>
+                <a href="#">Liên hệ</a>
+                <a href="login">Đăng nhập</a>
+            </nav>
+        </div>
+        
+    </header>
+
+    <main class="container">
+        <section class="summary-section">
+            <h2>Tóm tắt văn bản </h2>
+            <div class="input-area">
+                <textarea id="inputText" placeholder="Dán hoặc nhập văn bản gốc của bạn vào đây..." rows="15"></textarea>
+            </div>
+
+            <div class="controls">
+                <div class="settings">
+                    <label for="summaryLength">Độ dài tóm tắt:</label>
+                    <select id="summaryLength">
+                        <option value="short">Ngắn (20%)</option>
+                        <option value="medium" selected>Trung bình (40%)</option>
+                        <option value="long">Dài (60%)</option>
+                    </select>
+                </div>
+                <button id="summarizeBtn" class="btn primary-btn">Tóm tắt ngay</button>
+            </div>
+
+            <div class="output-area">
+                <h3>Văn bản tóm tắt</h3>
+                <textarea id="summaryText" readonly placeholder="Kết quả tóm tắt sẽ hiển thị ở đây..."></textarea>
+                <div class="output-actions">
+                    <button id="copyBtn" class="btn secondary-btn">Sao chép</button>
+                    <button id="clearBtn" class="btn secondary-btn">Xóa</button>
+                </div>
+            </div>
+        </section>
+
+         <section class="history-section">
+            <h3 class="history-title">Lịch sử tóm tắt</h3>
+            <ul id="historyList"></ul>
+            <button id="clearHistoryBtn" class="btn secondary-btn" style="margin-top:10px;">Xóa toàn bộ lịch sử</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 TextSummarizer. All rights reserved.</p>
+        </div>
+    </footer>
+
+       <div id="miniLogin" class="mini-login">
+    <span id="closeMini" class="close-mini">&times;</span>
+    
+    <div class="modal-header">
+        <h2>ĐĂNG NHẬP</h2>
+        <p>Hệ thống Summarizer</p>
+    </div>
+
+    <form id="miniLoginForm" action="/login" method="POST">
+        <div class="input-group">
+            <label for="username">Tài khoản:</label>
+            <div class="input-field">
+                <i class="fas fa-user"></i>
+                <input type="text" id="username" name="username" placeholder="Nhập email hoặc tên tài khoản" required>
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label for="password">Mật khẩu:</label>
+            <div class="input-field">
+                <i class="fas fa-lock"></i>
+                <input type="password" id="password" name="password" placeholder="Nhập mật khẩu của bạn" required>
+            </div>
+        </div>
+
+        <button type="submit" class="login-btn">Đăng nhập</button>
+    </form>
+    
+    <div class="support-links">
+        <a href="#">Quên mật khẩu?</a>
+        <span>•</span>
+        <a href="#">Đăng ký ngay</a>
+    </div>
+</div>
+
+
+   <script src="main.js"></script>
+</body>
+</html>
