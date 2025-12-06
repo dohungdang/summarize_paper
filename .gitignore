@@ -1,0 +1,12 @@
+# Backend: bỏ môi trường ảo, dữ liệu, cache
+backend/venv/
+backend/chroma_db/
+backend/uploads/
+backend/__pycache__/
+backend/summaries
+
+# Python chung
+__pycache__/
+*.py[cod]
+*.db
+.env
