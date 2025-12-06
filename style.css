@@ -240,4 +240,71 @@ footer {
         flex-direction: column;
         align-items: stretch;
     }
+
+}
+
+.history-container {
+    margin-top: 40px;
+    width: 100%;
+}
+.history-item {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+    font-family: "Poppins", sans-serif;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.history-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.history-item .time {
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.history-item p {
+    margin: 6px 0;
+    color: #444;
+    font-size: 14px;
+}
+
+.history-item p i {
+    margin-right: 6px;
+    color: #6c63ff;
+}
+.history-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 3px 10px rgba(0,0,0,0.6);
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+
+
+/* Nút xóa */
+.clear-history-btn {
+    width: 100%;
+    border: none;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 12px;
+    background: #f55656;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 10px;
+    font-family: "Poppins", sans-serif;
+    transition: opacity 0.15s ease;
+}
+
+.clear-history-btn:hover {
+    opacity: 0.9;
 }
