@@ -17,6 +17,51 @@ document.addEventListener('DOMContentLoaded', () => {
     closeMini.addEventListener('click', () => {
         miniLogin.style.display = 'none';
     });
+     // ====== LỊCH SỬ ======
+    function saveToHistory(original, result) {
+        const history = JSON.parse(localStorage.getItem('history')) || [];
+
+        history.unshift({
+            input: original,
+            summary: result,
+            time: new Date().toLocaleString()
+        });
+
+        localStorage.setItem('history', JSON.stringify(history));
+        renderHistory();
+    }
+
+    function renderHistory() {
+        const history = JSON.parse(localStorage.getItem('history')) || [];
+        historyList.innerHTML = '';
+
+        history.forEach(item => {
+            const li = document.createElement('li');
+            li.classList.add("history-item");
+
+            li.innerHTML = `
+                <div><b>${item.time}</b></div>
+                <div>📄 Gốc: ${item.input.substring(0, 60)}...</div>
+                <div>✂️ Tóm tắt: ${item.summary.substring(0, 60)}...</div>
+            `;
+
+            li.addEventListener('click', () => {
+                inputText.value = item.input;
+                summaryText.value = item.summary;
+            });
+
+            historyList.appendChild(li);
+        });
+    }
+
+    if (historyList) renderHistory();
+
+    if (clearHistoryBtn) {
+        clearHistoryBtn.addEventListener('click', () => {
+            localStorage.removeItem('history');
+            renderHistory();
+        });
+    }
 
     summarizeBtn.addEventListener('click', async() => {
         const originalText = inputText.value.trim();
@@ -53,4 +98,5 @@ document.addEventListener('DOMContentLoaded', () => {
         
         return words.slice(0, numWordsToKeep).join(' ') + '... (Văn bản tóm tắt mô phỏng)';
     }
+
 );
