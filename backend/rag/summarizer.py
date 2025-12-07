@@ -28,25 +28,22 @@ LENGTH_TO_MAX_TOKENS = {
 }
 
 
-def summarize_text(text: str, length: LengthType = "medium") -> str:
-    """Tóm tắt 1 đoạn text ngắn/trung bình ,không dùng RAG, chỉ là seq2seq thuần """
-    text = (text or "").strip()
+def summarize_text(text: str, length: Literal["short", "medium", "long"] = "medium") -> str:
+    """Summarize text using the seq2seq model."""
+    text = text.strip()
     if not text:
         return ""
-
+    
     max_new_tokens = LENGTH_TO_MAX_TOKENS.get(length, 128)
-
-    encoded = tokenizer(
-        text,
-        return_tensors="pt",
-        truncation=True,
-        max_length=1024,
-    )
-    encoded = {k: v.to(device) for k, v in encoded.items()}
+    inputs = tokenizer(text, return_tensors="pt", truncation=True, max_length=1024).to(device)
 
     with torch.no_grad():
+        input_ids = inputs.get("input_ids")
+        attention_mask = inputs.get("attention_mask")
+
         output_ids = model.generate(
-            **encoded,
+            input_ids=input_ids,
+            attention_mask=attention_mask,
             max_new_tokens=max_new_tokens,
             num_beams=4,
             length_penalty=1.0,
@@ -55,3 +52,4 @@ def summarize_text(text: str, length: LengthType = "medium") -> str:
 
     summary = tokenizer.decode(output_ids[0], skip_special_tokens=True)
     return summary.strip()
+
