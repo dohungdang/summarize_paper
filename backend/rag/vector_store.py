@@ -1,13 +1,12 @@
 import os
 from pathlib import Path
 from typing import List, Dict, Any
+import chromadb
+from chromadb.config import Settings
 
 # Tắt telemetry ngay từ đầu (phòng trường hợp Chroma vẫn đọc env)
 os.environ["CHROMA_TELEMETRY_ENABLED"] = "false"
 os.environ["POSTHOG_DISABLED"] = "true"
-
-import chromadb
-from chromadb.config import Settings
 
 # Patch thẳng telemetry.capture để không còn gọi PostHog nữa
 try:
@@ -32,17 +31,27 @@ collection = client.get_or_create_collection(
     metadata={"hnsw:space": "cosine"},
 )
 
+def add_chunks(paper_id: str, chunks: list) -> int:
+    """ Thêm các đoạn văn bản (chunks) vào ChromaDB """
+    # Chuẩn bị các chunk cho việc lưu trữ
+    ids = [f"{paper_id}_{i}" for i in range(len(chunks))]
+    documents = chunks 
+    metadatas = [{"source": paper_id} for _ in range(len(chunks))]
+    # Lưu các chunk vào collection
+    collection.add(
+        ids=ids,
+        documents=documents,
+        metadatas=metadatas,
+    )
+    return len(chunks)  # Trả về số lượng chunk đã thêm vào
+
 def add_embeddings(
     ids: List[str],
     embeddings: List[List[float]],
     documents: List[str],
     metadatas: List[Dict[str, Any]] | None = None,
 ) -> None:
-    """Thêm nhiều vector embedding vào collection.
-    ids: list id unique cho từng chunk
-    embeddings: list vector float
-    documents: text gốc của chunk
-    metadatas: thông tin thêm (ví dụ file_name, page, ...)"""
+    """Thêm nhiều vector embedding vào collection """
     if metadatas is None:
         metadatas = [{} for _ in ids]
 
