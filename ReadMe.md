@@ -10,3 +10,6 @@ Chức năng chính:
 - Giao diện đăng nhập (UI phía frontend)
 
 Giao diện đơn giản, dễ sử dụng và hoạt động tốt trên nhiều thiết bị.
+Hướng dẫn triển khai Frontend trên local bằng cách: 
+- Sau khi tải file Frontend về máy, ta sử dụng Bash: python -m http.server 5500 để đưa frontend lên local http://127.0.0.1:5500/.
+- Khi đó ta kết nối với Backend đã được chạy trên local 
